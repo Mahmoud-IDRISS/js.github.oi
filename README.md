@@ -1,2 +1,2 @@
-# js.github.oi
+# js.github.oi.index.html
  checkpoint javaScript
