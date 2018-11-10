@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Java script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!--behavior=scroll or slide  or altenate-->
+    <marquee behavior="alternate" direction="reight" bgcolor="#00cccc"><h1> checkpoint javaScript</h1></marquee>
+        <h1>BASIC <strong id="txt" onload="chargementtext()"> - 1</strong></h1>
+        
+    <label for="gbtn" id="groupbtn">
+        <input type="button" value="G" onclick="textGras()" title="text en gras"> <!--bouton en gras-->
+       <!-- <button type="reset" onclick="Annualtion()" value="r">reset</button>-->
+        <input type="button" onclick="textItalic()" value="I" title=" text Italic"> <!--bouton italic-->
+        <input type="button" onclick="textSouligne()" value="S" title="souligner text">
+    </label>
+         <label for="styleFont"> Police d'ecriture
+            <select name="polic" id="pol" onchange="styleparagraphe()">
+                <option value="Font Family">Font Family</option>
+                <option value="TNR">Times New Roman</option>
+                <option value="Arial">Arial</option>
+                <option value="Elephant">Elephant</option>
+                <option value="Times">Times</option>
+                <option value="serif">serif</option>
+            </select>
+        </label>
+       
+        <label for="FontColor">Couleur du text
+            <input id="choixcouleur" type="color" value="#fad345" name="textcolor" onchange="modifiercouleur()">
+        </label>   
+        <label for="FontColor">Couleur du Font
+            <input id="fontcouleur" type="color" value="#fad345" name="textcolor" onchange="modifiercolorfont()">
+        </label>
+        
+        <label for="taille">Taille de police   
+            <select name="font-size" id="tpg" onchange="taillePolic()">
+                <option value="fontSize">Font Size</option>
+                <option value="10" style="font-size:10px">10pt</option>
+                <option value="12" style="font-size:12px">12pt</option>
+                <option value="14" style="font-size:14px">14pt</option>
+                <option value="16" style="font-size:16px">16pt</option>
+                <option value="18" style="font-size:18px">18pt</option>
+                <option value="20" style="font-size:20px">20pt</option>
+                <option value="22" style="font-size:22px">22pt</option>
+            </select>
+        </label>  
+           
+    <textarea name="textareabig" id="parg" cols="190" rows="20">        
+        <p>
+            Nous allons créer un programme qui ressemble à Microsoft Word. <br>
+            Il y aura un paragraphe et un tas de boutons. <br>
+            Chaque bouton aura un attribut onclick qui reliera une fonction javascript différente. <br>
+            Ces boutons auront des noms uniques et devraient faire ce qui suit: <br>
+            -un bouton pour mettre le paragraphe en gras <br>
+            -un bouton pour rendre le paragraphe en italique <br>
+            -un bouton pour souligner le paragraphe <br>
+            -une liste déroulante qui aura un tas de polices, et lorsque vous cliquez sur l'une des polices du paragraphe va changer. <br>
+             - une liste déroulante qui aura un tas de chiffres (choisissez ce que vous voulez) et lorsque vous cliquez dessus, la taille de la police du paragraphe change en cela. <br>
+            Tous ces boutons seront sur une ligne et au-dessus du paragraphe. <br>
+            Vous êtes libre de faire le style que vous voulez. 
+            Référence :  <br>
+        </p>
+    </textarea>
+        <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
